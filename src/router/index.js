@@ -9,7 +9,7 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/detail/:id',
+    path: '/detail/:id/:Goals/:Win/:Loss',
     component: Detail, 
     props: true
   },

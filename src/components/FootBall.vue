@@ -12,18 +12,18 @@
                   <div class="row">
                       <div class="col-xs-12 col-sm-4" v-for="club in FootBallClub" :key="club.kunci">
                           <div class="card">
-                              <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                              <a class="img-card">
                               <img :src="club.Logo" class="mt-3"/>
                             </a>
                               <div class="card-content">
                                   <H5 class="card-title text-center">
-                                      <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">{{ club.NamaClub }}
+                                      <a>{{ club.NamaClub }}
                                     </a>
                                   </H5>
                               </div>
                               <div class="card-read-more" >
                                   <a class="btn btn-link btn-block">
-                                    <router-link :to="'/detail/'+ club.id">Detail</router-link> 
+                                    <router-link :to="'/detail/'+ club.id + '/'+ club.Goals + '/' + club.Win + '/' + club.Loss">Detail</router-link> 
                                   </a>
                               </div>
                           </div>
@@ -138,10 +138,10 @@
           {
             NamaClub : 'REAL MADRID FC ',
             Logo : require('@/assets/image/realmadrid.png'),
-            Win: 2,
+            Win: 105,
             Loss: 3,
             Draw: 0,
-            Goals: 0,
+            Goals: 670,
             Yellow_Card: 0,
             Red_Card: 1,
             Matches_Played: 2,
@@ -151,20 +151,20 @@
             NamaClub : 'MANCHESTER CITY ',
             Logo : require('@/assets/image/manchestercity.png'),
             Win: 2,
-            Loss: 3,
-            Draw: 0,
-            Goals: 0,
+            Loss: 6,
+            Draw: 8,
+            Goals: 120,
             Yellow_Card: 0,
             Red_Card: 1,
-            Matches_Played: 2,
+            Matches_Played: 7,
             id : 2,
           },
           {
             NamaClub : 'TOTTENHAM HOTSPUR',
             Logo : require('@/assets/image/tottenham.png'),
-            Win: 2,
-            Loss: 3,
-            Draw: 0,
+            Win: 1,
+            Loss: 5,
+            Draw: 7,
             Goals: 0,
             Yellow_Card: 0,
             Red_Card: 1,
@@ -189,27 +189,34 @@
             Win: 2,
             Loss: 3,
             Draw: 0,
-            Goals: 0,
-            Yellow_Card: 0,
-            Red_Card: 1,
+            Goals: 90,
+            Yellow_Card: 9,
+            Red_Card: 4,
             Matches_Played: 2,
             id : 5,
           },
           {
             NamaClub : 'FULHAM F.C',
             Logo : require('@/assets/image/fulham.png'),
+            Win: 2,
+            Loss: 6,
+            Draw: 9,
+            Goals: 21,
+            Yellow_Card: 9,
+            Red_Card: 5,
+            Matches_Played: 2,
             id : 6,
           },
           {
             NamaClub : 'JUVENTUS',
             Logo : require('@/assets/image/juventus.png'),
-            Win: 2,
+            Win: 105,
             Loss: 3,
             Draw: 0,
-            Goals: 0,
-            Yellow_Card: 0,
-            Red_Card: 1,
-            Matches_Played: 2,
+            Goals: 670,
+            Yellow_Card: 1,
+            Red_Card: 3,
+            Matches_Played: 17,
             id : 7,
           },
           {

@@ -1,6 +1,6 @@
 <script>
 export default{
-    props: ['id']
+    props: ['id','Goals','Win','Loss']
 }
 </script>
 <template>
@@ -67,7 +67,7 @@ export default{
         <div class="col-md-2">
             <div class="card p-3 mb-2">
                 <div class="mt-5">
-                    <h2 class="heading fw-bold">0</h2>
+                    <h2 class="heading fw-bold">{{ Win }}</h2>
                     <div class="mt-5">
                         <div class="mt-3"> <h6 class="text1">Win</h6> </div>
                     </div>
@@ -77,7 +77,7 @@ export default{
         <div class="col-md-2">
             <div class="card p-3 mb-2">
                 <div class="mt-5">
-                    <h2 class="heading fw-bold">0</h2>
+                    <h2 class="heading fw-bold">{{ Loss }}</h2>
                     <div class="mt-5">
                         <div class="mt-3"> <h6 class="text1">Loss</h6> </div>
                     </div>
@@ -87,7 +87,7 @@ export default{
         <div class="col-md-2">
             <div class="card p-3 mb-2">
                 <div class="mt-5">
-                    <h2 class="heading fw-bold">0</h2>
+                    <h2 class="heading fw-bold">{{ Goals }}</h2>
                     <div class="mt-5">
                         <div class="mt-3"> <h6 class="text1">Goals</h6> </div>
                     </div>
@@ -107,7 +107,7 @@ export default{
         <div class="col-md-2">
             <div class="card p-3 mb-2  bg-warning">
                 <div class="mt-5">
-                    <h2 class="heading fw-bold">0</h2>
+                    <h2 class="heading fw-bold">2</h2>
                     <div class="mt-5">
                         <div class="mt-3"> <h6 class="text1">Yellow Card</h6> </div>
                     </div>
@@ -117,7 +117,7 @@ export default{
         <div class="col-md-2">
             <div class="card p-3 mb-2  bg-danger">
                 <div class="mt-5">
-                    <h2 class="heading fw-bold">0</h2>
+                    <h2 class="heading fw-bold">1</h2>
                     <div class="mt-5">
                         <div class="mt-3"> <h6 class="text1">Red Card</h6> </div>
                     </div>
